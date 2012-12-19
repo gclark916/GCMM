@@ -1,16 +1,15 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="GCMM\GUI\MainWindow.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="c:\Users\Greg\Documents\Projects\GCMM\GCMM\gtk-gui\MainWindow.cs">
     <Files>
       <File FileName="GCMM\Main.cs" Line="1" Column="1" />
       <File FileName="GCMM\AssemblyInfo.cs" Line="1" Column="1" />
-      <File FileName="GCMM\GUI\MainWindow.cs" Line="19" Column="37" />
+      <File FileName="GCMM\GUI\MainWindow.cs" Line="16" Column="3" />
+      <File FileName="c:\Users\Greg\Documents\Projects\GCMM\GCMM\gtk-gui\MainWindow.cs" Line="260" Column="32" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="C:\Users\Greg\Documents\Projects\GCMM\GCMM\GUI\MainWindow.cs" line="19" />
-    </BreakpointStore>
+    <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>

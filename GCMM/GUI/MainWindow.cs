@@ -10,15 +10,8 @@ public partial class MainWindow: Gtk.Window
 	
 	protected void OnDeleteEvent (object sender, DeleteEventArgs a)
 	{
+		Console.WriteLine("quitting");
 		Application.Quit ();
 		a.RetVal = true;
-	}
-
-	protected void OnConfigureEvent (object sender, ConfigureEventArgs a)
-	{
-		Widget[] children = this.Children;
-		foreach (Widget child in children) {
-			Console.WriteLine(child.Name);
-		}
 	}
 }

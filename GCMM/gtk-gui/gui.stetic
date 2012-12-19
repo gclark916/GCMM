@@ -8,7 +8,7 @@
     <widget-library name="glade-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f" />
     <widget-library name="../bin/Debug/GCMM.exe" internal="true" />
   </import>
-  <widget class="Gtk.Window" id="MainWindow" design-size="1190 800">
+  <widget class="Gtk.Window" id="MainWindow" design-size="1215 665">
     <action-group name="Default">
       <action id="FileAction">
         <property name="Type">Action</property>
@@ -22,10 +22,11 @@
       </action>
     </action-group>
     <property name="MemberName" />
+    <property name="Events">PropertyChangeMask</property>
     <property name="Title" translatable="yes">MainWindow</property>
     <property name="WindowPosition">CenterOnParent</property>
+    <property name="Gravity">Center</property>
     <signal name="DeleteEvent" handler="OnDeleteEvent" after="yes" />
-    <signal name="ConfigureEvent" handler="OnConfigureEvent" />
     <child>
       <widget class="Gtk.VBox" id="vbox2">
         <property name="MemberName" />
@@ -45,21 +46,38 @@
           </packing>
         </child>
         <child>
-          <widget class="Gtk.HPaned" id="hpaned4">
+          <widget class="Gtk.HPaned" id="hpaned3">
             <property name="MemberName" />
             <property name="CanFocus">True</property>
-            <property name="Position">887</property>
+            <property name="Position">199</property>
             <child>
-              <widget class="Gtk.HPaned" id="hpaned1">
+              <widget class="Gtk.ScrolledWindow" id="GtkScrolledWindow1">
+                <property name="MemberName" />
+                <property name="ShadowType">In</property>
+                <child>
+                  <widget class="Gtk.NodeView" id="nodeview6">
+                    <property name="MemberName" />
+                    <property name="CanFocus">True</property>
+                    <property name="ShowScrollbars">True</property>
+                  </widget>
+                </child>
+              </widget>
+              <packing>
+                <property name="Resize">False</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.HPaned" id="hpaned4">
                 <property name="MemberName" />
                 <property name="CanFocus">True</property>
-                <property name="Position">307</property>
+                <property name="Position">708</property>
                 <child>
                   <widget class="Gtk.ScrolledWindow" id="GtkScrolledWindow">
                     <property name="MemberName" />
+                    <property name="WidthRequest">400</property>
                     <property name="ShadowType">In</property>
                     <child>
-                      <widget class="Gtk.NodeView" id="nodeview1">
+                      <widget class="Gtk.NodeView" id="nodeview7">
                         <property name="MemberName" />
                         <property name="CanFocus">True</property>
                         <property name="ShowScrollbars">True</property>
@@ -71,35 +89,19 @@
                   </packing>
                 </child>
                 <child>
-                  <widget class="Gtk.ScrolledWindow" id="GtkScrolledWindow1">
+                  <widget class="Gtk.Fixed" id="fixed1">
                     <property name="MemberName" />
-                    <property name="ShadowType">In</property>
-                    <child>
-                      <widget class="Gtk.NodeView" id="nodeview2">
-                        <property name="MemberName" />
-                        <property name="CanFocus">True</property>
-                        <property name="ShowScrollbars">True</property>
-                      </widget>
-                    </child>
+                    <property name="WidthRequest">100</property>
+                    <property name="HasWindow">False</property>
                   </widget>
+                  <packing>
+                    <property name="Resize">False</property>
+                  </packing>
                 </child>
               </widget>
               <packing>
-                <property name="Resize">False</property>
+                <property name="Shrink">False</property>
               </packing>
-            </child>
-            <child>
-              <widget class="Gtk.ScrolledWindow" id="GtkScrolledWindow2">
-                <property name="MemberName" />
-                <property name="ShadowType">In</property>
-                <child>
-                  <widget class="Gtk.NodeView" id="nodeview3">
-                    <property name="MemberName" />
-                    <property name="CanFocus">True</property>
-                    <property name="ShowScrollbars">True</property>
-                  </widget>
-                </child>
-              </widget>
             </child>
           </widget>
           <packing>
